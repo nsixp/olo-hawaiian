@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masuk dan Cari Makanan Kesukaanmu! | Olo Hawaiian</title>
+    <title>Daftar Untuk Keseruan Menjelajahi Makanan! | Olo Hawaiian</title>
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="frontend/styles/login/main.css">
+    <link rel="stylesheet" href="frontend/styles/signup/main.css">
 </head>
 <body>
     <main>
@@ -23,32 +23,15 @@
                             petualangan kuliner tak terbatas.
                         </p>
                     </div>
-                    <div class="masuk-terbaru">
-                        <h5 class="text-start">Masuk terbaru</h5>
-                        <div class="user">
-                            <div class="user-acc">
-                                <img src="frontend/images/user-pic-1.png" alt="User picture 1">
-                                <p>Naufal Itmam</p>
-                                <a href="#" class="btn-close"></a>
-                            </div>
-                            <div class="user-acc">
-                                <img src="frontend/images/user-pic-2.png" alt="User picture 2">
-                                <p>Davinda Khrisna</p>
-                                <a href="#" class="btn-close"></a>
-                            </div>
-                            <div class="user-acc">
-                                <img src="frontend/images/user-pic-3.png" alt="User picture 3">
-                                <p>Alif Ramadhan</p>
-                                <a href="#" class="btn-close"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divider-1 d-flex">
-                        <hr class="divider-left border-2">
-                        <span class="mt-1">Atau</span>
-                        <hr class="divider-right border-2">
-                    </div>
                     <div class="form-login mb-1">
+                        <div class="first-name">
+                            <h5 class="text-start">Nama depan</h5>
+                            <input type="text" id="fst-name" placeholder="John">
+                        </div>
+                        <div class="last-name">
+                            <h5 class="text-start">Nama belakang</h5>
+                            <input type="text" id="lst-name" placeholder="Doe">
+                        </div>
                         <div class="email">
                             <h5 class="text-start">Email</h5>
                             <input type="email" id="email" placeholder="example@gmail.com">
@@ -59,14 +42,18 @@
                                 <input type="password" id="password" placeholder="********">
                                 <div id="toggle-pass" onclick="showHide();"></div>
                             </div>
-                            <div class="forgot-pass text-end mt-1">
-                                <a href="#">Lupa password?</a>
+                        </div>
+                        <div class="confirm-password">
+                            <h5 class="text-start">Konfirmasi password</h5>
+                            <div class="pass-warp">
+                                <input type="password" id="confirm-password" placeholder="********">
+                                <div id="toggle-conf-pass" onclick="showHide();"></div>
                             </div>
                         </div>
                     </div>
                     <div class="buttons">
-                        <a href="#" class="btn btn-login">Masuk</a>
-                        <p>Belum mempunyai akun? <a href="#" class="create-acc">Buat Akun</a>.</p>
+                        <a href="#" class="btn btn-login">Daftar</a>
+                        <p>Sudah mempunyai akun? <a href="#" class="create-acc">Masuk</a>.</p>
                     </div>
                     <div class="divider-2 d-flex">
                         <hr class="divider-left border-2">
@@ -84,6 +71,6 @@
 
     <script src="frontend/libraries/jquery/jquery-3.7.0.min.js"></script>
     <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
-    <script src="frontend/scripts/login/main.js"></script>
+    <script src="frontend/scripts/signup/main.js"></script>
 </body>
 </html>
